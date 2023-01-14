@@ -31,6 +31,10 @@ Content-Type: application/json
     "message":"Dummy message"
 }
 
+###
+
+GET http://localhost:3001/pitch/all
+
 
 
 

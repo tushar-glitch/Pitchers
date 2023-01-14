@@ -19,6 +19,16 @@ class Pitch_controller {
             })
         }
     }
-}
+    static getPitches = async (req, res) => {
+        const all_pitches = await Pitch_model.find()
+        if (all_pitches) {
+            res.json(all_pitches)
+        } else {
+            res.status(200).json({
+                message:"No pitches found at this moment"
+            })
+        }
+    }
+}   
 
 module.exports = Pitch_controller
