@@ -19,6 +19,18 @@ Content-Type: application/json
     "password":"tushar1234"
 }
 
+###
+
+//pitch routes
+POST http://localhost:3001/pitch/add
+Content-Type: application/json
+
+{
+    "title":"Dummy title",
+    "description":"Dummy description",
+    "message":"Dummy message"
+}
+
 
 
 
